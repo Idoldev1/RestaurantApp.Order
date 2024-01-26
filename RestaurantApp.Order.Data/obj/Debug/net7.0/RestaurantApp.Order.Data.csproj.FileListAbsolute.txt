@@ -1,0 +1,15 @@
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\bin\Debug\net7.0\RestaurantApp.Order.Data.deps.json
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\bin\Debug\net7.0\RestaurantApp.Order.Data.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\bin\Debug\net7.0\RestaurantApp.Order.Data.pdb
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\bin\Debug\net7.0\RestaurantApp.Order.Domain.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\bin\Debug\net7.0\RestaurantApp.Order.Domain.pdb
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\obj\Debug\net7.0\RestaurantApp.Order.Data.csproj.AssemblyReference.cache
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\obj\Debug\net7.0\RestaurantApp.Order.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\obj\Debug\net7.0\RestaurantApp.Order.Data.AssemblyInfoInputs.cache
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\obj\Debug\net7.0\RestaurantApp.Order.Data.AssemblyInfo.cs
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\obj\Debug\net7.0\RestaurantApp.Order.Data.csproj.CoreCompileInputs.cache
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\obj\Debug\net7.0\RestaurantApp.Order.Data.csproj.CopyComplete
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\obj\Debug\net7.0\RestaurantApp.Order.Data.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\obj\Debug\net7.0\refint\RestaurantApp.Order.Data.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\obj\Debug\net7.0\RestaurantApp.Order.Data.pdb
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Data\obj\Debug\net7.0\ref\RestaurantApp.Order.Data.dll

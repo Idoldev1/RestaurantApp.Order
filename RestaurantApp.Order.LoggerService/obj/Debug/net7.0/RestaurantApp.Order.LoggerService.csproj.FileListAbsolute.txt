@@ -1,0 +1,12 @@
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\bin\Debug\net7.0\RestaurantApp.Order.LoggerService.deps.json
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\bin\Debug\net7.0\RestaurantApp.Order.LoggerService.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\bin\Debug\net7.0\RestaurantApp.Order.LoggerService.pdb
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\obj\Debug\net7.0\RestaurantApp.Order.LoggerService.csproj.AssemblyReference.cache
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\obj\Debug\net7.0\RestaurantApp.Order.LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\obj\Debug\net7.0\RestaurantApp.Order.LoggerService.AssemblyInfoInputs.cache
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\obj\Debug\net7.0\RestaurantApp.Order.LoggerService.AssemblyInfo.cs
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\obj\Debug\net7.0\RestaurantApp.Order.LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\obj\Debug\net7.0\RestaurantApp.Order.LoggerService.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\obj\Debug\net7.0\refint\RestaurantApp.Order.LoggerService.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\obj\Debug\net7.0\RestaurantApp.Order.LoggerService.pdb
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.LoggerService\obj\Debug\net7.0\ref\RestaurantApp.Order.LoggerService.dll

@@ -1,0 +1,17 @@
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\bin\Debug\net7.0\RestaurantApp.Order.Service.deps.json
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\bin\Debug\net7.0\RestaurantApp.Order.Service.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\bin\Debug\net7.0\RestaurantApp.Order.Service.pdb
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\bin\Debug\net7.0\RestaurantApp.Order.Data.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\bin\Debug\net7.0\RestaurantApp.Order.Domain.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\bin\Debug\net7.0\RestaurantApp.Order.Domain.pdb
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\bin\Debug\net7.0\RestaurantApp.Order.Data.pdb
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\RestaurantApp.Order.Service.csproj.AssemblyReference.cache
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\RestaurantApp.Order.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\RestaurantApp.Order.Service.AssemblyInfoInputs.cache
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\RestaurantApp.Order.Service.AssemblyInfo.cs
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\RestaurantApp.Order.Service.csproj.CoreCompileInputs.cache
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\RestaurantApp.Order.Service.csproj.CopyComplete
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\RestaurantApp.Order.Service.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\refint\RestaurantApp.Order.Service.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\RestaurantApp.Order.Service.pdb
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\ref\RestaurantApp.Order.Service.dll
