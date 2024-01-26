@@ -21,4 +21,9 @@ public class OrderRepository : IOrderRepository
 
         return order.OrderId;
     }
+
+    public async Task GetOrderByIdAsync(string Id)
+    {
+        var order = await _orderDb.Orders.FirstOrDefault(Id);
+    }
 }
