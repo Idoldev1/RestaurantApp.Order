@@ -31,6 +31,7 @@ public class OrderCompletedConsumer : IConsumer<OrderCompletedMessage>
                 // You might include additional logic, such as sending notifications, updating UI, etc.
 
                 // Save the updated order back to the database
-                await _orderRepository.UpdateOrderAsync(order);
+                await _orderRepository.UpdateOrdersAsync(order);
+            }
     }
 }

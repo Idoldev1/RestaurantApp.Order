@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using RestaurantApp.Order.Data.DataAccess;
 using RestaurantApp.Order.Domain.Entities;
 using RestaurantApp.Order.Service.Repositories.Interfaces;
@@ -22,8 +23,16 @@ public class OrderRepository : IOrderRepository
         return order.OrderId;
     }
 
-    public async Task GetOrderByIdAsync(string Id)
+    public async Task<Orders> GetOrderByIdAsync(string Id)
     {
-        var order = await _orderDb.Orders.FirstOrDefault(Id);
+        return await _orderDb.Orders.FindAsync(Id);
+
+    }
+
+    public async Task UpdateOrdersAsync(Orders order)
+    {
+        _orderDb.Entry(order).State = EntityState.Modified;
+
+        await _orderDb.SaveChangesAsync();
     }
 }
