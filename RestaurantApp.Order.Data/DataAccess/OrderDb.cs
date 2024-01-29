@@ -6,7 +6,7 @@ namespace RestaurantApp.Order.Data.DataAccess;
 
 public class OrderDb : DbContext
 {
-    public OrderDb(DbContextOptions<OrderDb> options) : base(options)
+    public OrderDb(DbContextOptions options) : base(options)
     {
         
     }
