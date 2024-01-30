@@ -1,8 +1,7 @@
 namespace RestaurantApp.Order.Service.Contracts.Messages;
 
 
-public class OrderCompletedMessage
+public class OrderCompletedMessage : Message
 {
-    public string OrderId { get; }
-    public string CustomerId { get; }
+    
 }

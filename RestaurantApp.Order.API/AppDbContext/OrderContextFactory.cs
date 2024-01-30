@@ -17,7 +17,9 @@ public class OrderContextFactory : IDesignTimeDbContextFactory<OrderDb>
 
         var builder = new DbContextOptionsBuilder<OrderDb>()
 
-        .UseSqlite(configuration.GetConnectionString("OrderDbConnection"));
+        .UseSqlite(configuration.GetConnectionString("OrderDbConnection"),
+            b => b.MigrationsAssembly("RestaurantApp.Order.API"));
+        
 
 
         return new OrderDb(builder.Options);
