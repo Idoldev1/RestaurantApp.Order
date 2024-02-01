@@ -613,7 +613,8 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.Extensions.Configuration": "8.0.0",
           "RestaurantApp.Order.Data": "1.0.0",
-          "RestaurantApp.Order.Domain": "1.0.0"
+          "RestaurantApp.Order.Domain": "1.0.0",
+          "RestaurantApp.Order.LoggerService": "1.0.0"
         },
         "runtime": {
           "RestaurantApp.Order.Service.dll": {}

@@ -11,9 +11,9 @@ namespace RestaurantApp.Order.Service.Handlers;
 public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, string>
 {
     private readonly IOrderRepository _orderRepository;
-    private readonly IPublishEndpoint _publish;
+    private readonly IBus _publish;
 
-    public PlaceOrderCommandHandler(IOrderRepository orderRepository, IPublishEndpoint publish)
+    public PlaceOrderCommandHandler(IOrderRepository orderRepository, IBus publish)
     {
         _orderRepository = orderRepository;
         _publish = publish;
@@ -39,8 +39,9 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, strin
         // You might include additional logic, such as sending email and SMS notifications
 
 
-        await _publish.Publish<OrderStartedMessage>(new { }, cancellationToken);
+        await _publish.Publish(order, cancellationToken);
 
         return orderId;
+
     }
 }

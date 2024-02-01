@@ -15,3 +15,5 @@ C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Servi
 C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\refint\RestaurantApp.Order.Service.dll
 C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\RestaurantApp.Order.Service.pdb
 C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\obj\Debug\net7.0\ref\RestaurantApp.Order.Service.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\bin\Debug\net7.0\RestaurantApp.Order.LoggerService.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.Service\bin\Debug\net7.0\RestaurantApp.Order.LoggerService.pdb

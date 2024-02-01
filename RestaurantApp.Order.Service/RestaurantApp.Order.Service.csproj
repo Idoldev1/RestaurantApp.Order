@@ -14,5 +14,6 @@
   <ItemGroup>
     <ProjectReference Include="..\RestaurantApp.Order.Domain\RestaurantApp.Order.Domain.csproj" />
     <ProjectReference Include="..\RestaurantApp.Order.Data\RestaurantApp.Order.Data.csproj" />
+    <ProjectReference Include="..\RestaurantApp.Order.LoggerService\RestaurantApp.Order.LoggerService.csproj" />
   </ItemGroup>
 </Project>

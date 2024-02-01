@@ -2,7 +2,6 @@ using MassTransit;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RestaurantApp.Order.Service.Consumers;
 using RestaurantApp.Order.Service.Repositories.Implementation;
 using RestaurantApp.Order.Service.Repositories.Interfaces;
 
@@ -18,20 +17,15 @@ public static class ServiceRegistration
 
         services.AddMassTransit(x =>
         {
-            x.AddConsumer<OrderStartedConsumer>();
-            x.AddConsumer<OrderCompletedConsumer>();
-
             x.UsingRabbitMq((context, cfg) =>
             {
-                cfg.Host(new Uri(""), h =>
+                cfg.Host("localhost", "/", h =>
                 {
                     h.Username("guest");
                     h.Password("guest");
                 });
             });
         });
-
-        services.AddMassTransitHostedService();
 
 
         return services;
