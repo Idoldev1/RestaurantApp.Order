@@ -1,5 +1,8 @@
+using System.Reflection;
+using MediatR;
+using Microsoft.EntityFrameworkCore;
 using NLog;
-using RestaurantApp.Order.API.Services;
+using RestaurantApp.Order.Data.DataAccess;
 using RestaurantApp.Order.LoggerService.Extensions;
 using RestaurantApp.Order.Service;
 
@@ -19,13 +22,20 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy", builder =>
     builder.AllowAnyOrigin()
-        .WithMethods("POST", "GET")
+        .AllowAnyMethod()
         .AllowAnyHeader());
 });
 
+builder.Services.AddDbContext<OrderDb>(options =>
+{
+    options.UseSqlite(builder.Configuration.GetConnectionString("OrderDbConnection"));
+});
+
 builder.Services.AddServiceDependencies(builder.Configuration);
+builder.Services.AddScoped<OrderDb>();
 builder.Services.AddLoggerDependencies();
-builder.Services.AddHostedService<RabbitMqBackgroundServices>();
+builder.Services.AddMediatR(typeof(Program).GetTypeInfo().Assembly);
+//builder.Services.AddHostedService<RabbitMqBackgroundServices>();
 
 var app = builder.Build();
 

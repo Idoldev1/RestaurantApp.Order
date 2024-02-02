@@ -16,6 +16,7 @@ public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, Order
 
     public async Task<Orders> Handle(GetOrderByIdQuery request, CancellationToken cancellationToken)
     {
+        throw new Exception("");
 
         if (!string.IsNullOrWhiteSpace(request.OrderId))
         {

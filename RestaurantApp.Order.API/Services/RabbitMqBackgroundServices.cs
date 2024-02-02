@@ -4,7 +4,7 @@ using MassTransit;
 namespace RestaurantApp.Order.API.Services;
 
 
-public class RabbitMqBackgroundServices : BackgroundService
+/*public class RabbitMqBackgroundServices : BackgroundService
 {
     private readonly IBusControl _busControl;
 
@@ -25,4 +25,4 @@ public class RabbitMqBackgroundServices : BackgroundService
         await _busControl.StopAsync(cancellationToken);
         await base.StopAsync(cancellationToken);
     }
-}
+}*/
