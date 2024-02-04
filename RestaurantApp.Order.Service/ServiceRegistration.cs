@@ -2,6 +2,8 @@ using MassTransit;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RestaurantApp.Order.Service.Commands;
+using RestaurantApp.Order.Service.Handlers;
 using RestaurantApp.Order.Service.Repositories.Implementation;
 using RestaurantApp.Order.Service.Repositories.Interfaces;
 
@@ -14,6 +16,7 @@ public static class ServiceRegistration
     {
         services.AddScoped<IOrderRepository, OrderRepository>();
         services.AddMediatR(typeof(IServiceCollection).Assembly);
+        services.AddScoped<IRequestHandler<PlaceOrderCommand, string>, PlaceOrderCommandHandler>();
 
         services.AddMassTransit(x =>
         {
