@@ -22,11 +22,16 @@ public class OrderController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetOrderById(string orderId)
     {
-         var query = new GetOrderByIdQuery{OrderId = orderId};
-         var order = await _mediator.Send(query);
-
-        
-        return Ok(order);
+        try
+        {
+            var query = new GetOrderByIdQuery{OrderId = orderId};
+            var order = await _mediator.Send(query);
+            return Ok(order);
+        }
+        catch
+        {
+            throw new Exception("Error fetching details from the database");
+        }
     }
 
 

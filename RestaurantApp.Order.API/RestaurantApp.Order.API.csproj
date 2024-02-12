@@ -9,9 +9,9 @@
     <PackageReference Include="MassTransit.RabbitMq" Version="8.1.3"/>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13"/>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
-    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.8"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.4"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4"/>
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.0.0"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RestaurantApp.Order.Domain\RestaurantApp.Order.Domain.csproj"/>

@@ -1,0 +1,1 @@
+2024-02-12 12:40:55.2418 ERROR Error fetching details from database

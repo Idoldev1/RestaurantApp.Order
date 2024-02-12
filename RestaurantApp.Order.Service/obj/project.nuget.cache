@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+iVJqci9Ssg2RIQjRBrKHeN+KI3Ho4PTU634kgBHhcWZzfDIWQa8jfT37VLLucV/+i72xBoxA2x5gA2dg0RXIQ==",
+  "dgSpecHash": "KckwjGRk/H9EY6XEw9sHcv6/ksPRjDt6D46e4EM9bqmYZ7rf3qcIl0aKqLK8UsI2ObMYdkXpylIe4szkGKRUMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\tosin\\Desktop\\Yinka Files\\RestaurantApp.Order\\RestaurantApp.Order.Service\\RestaurantApp.Order.Service.csproj",
   "expectedPackageFiles": [
@@ -27,8 +27,8 @@
     "C:\\Users\\tosin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
     "C:\\Users\\tosin\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
     "C:\\Users\\tosin\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\tosin\\.nuget\\packages\\nlog\\5.2.8\\nlog.5.2.8.nupkg.sha512",
-    "C:\\Users\\tosin\\.nuget\\packages\\nlog.extensions.logging\\5.3.8\\nlog.extensions.logging.5.3.8.nupkg.sha512",
+    "C:\\Users\\tosin\\.nuget\\packages\\nlog\\5.0.0\\nlog.5.0.0.nupkg.sha512",
+    "C:\\Users\\tosin\\.nuget\\packages\\nlog.extensions.logging\\5.0.0\\nlog.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\tosin\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
     "C:\\Users\\tosin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.1\\system.diagnostics.diagnosticsource.7.0.1.nupkg.sha512",
     "C:\\Users\\tosin\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",

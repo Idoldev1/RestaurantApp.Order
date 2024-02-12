@@ -9,10 +9,7 @@ using RestaurantApp.Order.Service;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-LogManager.Setup().LoadConfiguration(log => {
-    log.ForLogger().FilterMinLevel(NLog.LogLevel.Info).WriteToConsole();
-    log.ForLogger().FilterMinLevel(NLog.LogLevel.Debug).WriteToFile(fileName: "./logs/${shortdate}_logfile.txt");
-});
+LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

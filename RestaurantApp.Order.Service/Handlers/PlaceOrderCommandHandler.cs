@@ -20,6 +20,9 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, strin
 
     public async Task<string> Handle(PlaceOrderCommand request, CancellationToken cancellationToken)
     {
+
+        //Create a new Order
+        //Manual mapping for the purpose of testing
         var order = new Orders
         {
             CustomerId = request.CustomerId,
