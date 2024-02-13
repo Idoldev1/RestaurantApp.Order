@@ -1,1 +1,2 @@
 2024-02-12 12:40:55.2418 ERROR Error fetching details from database
+2024-02-12 13:39:17.9623 ERROR Requested Order details not found in the database

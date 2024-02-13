@@ -25,8 +25,7 @@ public class OrderRepository : IOrderRepository
 
     public async Task<Orders> GetOrderByIdAsync(string Id)
     {
-        return await _orderDb.Orders.FindAsync(Id);
-
+        return await _orderDb.Orders.FirstOrDefaultAsync(o => o.OrderId == Id);
     }
 
     public async Task UpdateOrdersAsync(Orders order)

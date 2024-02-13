@@ -1,5 +1,6 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using RestaurantApp.Order.Domain.Entities;
 using RestaurantApp.Order.Service.Commands;
 using RestaurantApp.Order.Service.Queries;
 
@@ -22,16 +23,9 @@ public class OrderController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetOrderById(string orderId)
     {
-        try
-        {
             var query = new GetOrderByIdQuery{OrderId = orderId};
             var order = await _mediator.Send(query);
             return Ok(order);
-        }
-        catch
-        {
-            throw new Exception("Error fetching details from the database");
-        }
     }
 
 
@@ -46,7 +40,7 @@ public class OrderController : ControllerBase
         }
 
         // You can customize the response based on the result
-        return CreatedAtAction(nameof(GetOrderById), new { orderId }, orderId);
+        return Ok(orderId);
     }
 
 }

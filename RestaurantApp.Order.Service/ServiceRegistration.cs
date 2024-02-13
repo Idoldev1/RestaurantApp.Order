@@ -16,7 +16,7 @@ public static class ServiceRegistration
 {
     public static IServiceCollection AddServiceDependencies(this IServiceCollection services, IConfiguration configurations)
     {
-        services.AddScoped<IOrderRepository, OrderRepository>();
+        services.AddTransient<IOrderRepository, OrderRepository>();
         services.AddMediatR(typeof(IServiceCollection).Assembly);
         services.AddScoped<IRequestHandler<PlaceOrderCommand, string>, PlaceOrderCommandHandler>();
         services.AddScoped<IRequestHandler<GetOrderByIdQuery, Orders>, GetOrderByIdQueryHandler>();
@@ -27,8 +27,8 @@ public static class ServiceRegistration
             {
                 cfg.Host("localhost", "/", h =>
                 {
-                    h.Username("myuser");
-                    h.Password("mypass");
+                    h.Username("guest");
+                    h.Password("guest");
                 });
             });
         });

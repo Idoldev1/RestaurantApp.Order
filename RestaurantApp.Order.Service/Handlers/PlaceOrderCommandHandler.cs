@@ -41,7 +41,7 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, strin
         // You might include additional logic, such as sending email and SMS notifications
 
 
-        //await _publish.Publish(order, cancellationToken);
+        await _publish.Publish(order, cancellationToken);
 
         return orderId;
 

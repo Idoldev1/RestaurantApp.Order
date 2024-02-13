@@ -1,6 +1,5 @@
 using MediatR;
 using RestaurantApp.Order.Domain.Entities;
-using RestaurantApp.Order.LoggerService.Implementations;
 using RestaurantApp.Order.LoggerService.Interfaces;
 using RestaurantApp.Order.Service.Repositories.Interfaces;
 
@@ -31,7 +30,7 @@ public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, Order
             _logger.LogError("Requested Order details not found in the database");
         }
         
-        var orderDto = new Orders
+        /*var orderDto = new Orders
         {
             OrderId = order.OrderId,
             CustomerId = order.CustomerId,
@@ -43,8 +42,8 @@ public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, Order
             }).ToList(),
             OrderStatus = order.OrderStatus,
             // Map other properties...
-        };
-        return orderDto;
+        };*/
+        return order;
 
 
     }
