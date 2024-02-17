@@ -1,5 +1,6 @@
 using MediatR;
 using RestaurantApp.Order.Domain.Entities;
+using RestaurantApp.Order.Domain.Exceptions;
 using RestaurantApp.Order.LoggerService.Interfaces;
 using RestaurantApp.Order.Service.Repositories.Interfaces;
 
@@ -28,6 +29,7 @@ public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, Order
         if(order == null)
         {
             _logger.LogError("Requested Order details not found in the database");
+            throw new OrderNotFoundException(request.OrderId);
         }
         
         /*var orderDto = new Orders
