@@ -1,3 +1,4 @@
+using AutoMapper;
 using MassTransit;
 using MediatR;
 using RestaurantApp.Order.Domain.Entities;
@@ -11,11 +12,13 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, strin
 {
     private readonly IOrderRepository _orderRepository;
     private readonly IBus _publish;
+    private readonly IMapper _mapper;
 
-    public PlaceOrderCommandHandler(IOrderRepository orderRepository, IBus publish)
+    public PlaceOrderCommandHandler(IOrderRepository orderRepository, IBus publish, IMapper mapper)
     {
         _orderRepository = orderRepository;
         _publish = publish;
+        _mapper = mapper;
     }
 
     public async Task<string> Handle(PlaceOrderCommand request, CancellationToken cancellationToken)
@@ -39,6 +42,8 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, strin
         var orderId = await _orderRepository.PlaceOrderAsync(order);
 
         // You might include additional logic, such as sending email and SMS notifications
+
+        //_mapper.Map<>
 
 
         await _publish.Publish(order, cancellationToken);
