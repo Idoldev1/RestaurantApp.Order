@@ -2,6 +2,7 @@ using MassTransit;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RestaurantApp.Order.Domain.Dtos;
 using RestaurantApp.Order.Domain.Entities;
 using RestaurantApp.Order.Service.Commands;
 using RestaurantApp.Order.Service.Handlers;
@@ -19,7 +20,7 @@ public static class ServiceRegistration
         services.AddTransient<IOrderRepository, OrderRepository>();
         services.AddMediatR(typeof(IServiceCollection).Assembly);
         services.AddAutoMapper(typeof(IServiceCollection));
-        services.AddScoped<IRequestHandler<PlaceOrderCommand, string>, PlaceOrderCommandHandler>();
+        services.AddScoped<IRequestHandler<PlaceOrderCommand, PlaceOrderDto>, PlaceOrderCommandHandler>();
         services.AddScoped<IRequestHandler<GetOrderByIdQuery, Orders>, GetOrderByIdQueryHandler>();
 
         services.AddMassTransit(x =>

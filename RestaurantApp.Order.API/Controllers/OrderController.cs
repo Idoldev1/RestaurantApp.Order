@@ -8,7 +8,7 @@ namespace RestaurantApp.Order.API.Controllers;
 
 
 [ApiController]
-[Route("api/orders")]
+[Route("api/[controller]")]
 public class OrderController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -20,7 +20,7 @@ public class OrderController : ControllerBase
 
 
 
-    [HttpGet]
+    [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetOrderById(string orderId)
     {
             var query = new GetOrderByIdQuery{OrderId = orderId};
@@ -32,12 +32,7 @@ public class OrderController : ControllerBase
     [HttpPost("placeOrder")]
     public async Task<IActionResult> PlaceOrder([FromBody] PlaceOrderCommand placeOrderCommand)
     {
-        var orderId = await _mediator.Send(placeOrderCommand);
-
-        if(string.IsNullOrEmpty(orderId))
-        {
-            throw new Exception("Invalid details. Please try again");
-        }
+        var orderId = await _mediator.Send(placeOrderCommand) ?? throw new Exception("Invalid details. Please try again");
 
         // You can customize the response based on the result
         return Ok(orderId);

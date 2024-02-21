@@ -20,11 +20,7 @@ public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, Order
 
     public async Task<Orders> Handle(GetOrderByIdQuery request, CancellationToken cancellationToken)
     {
-
-        if (request == null)
-        {
-            _logger.LogError("Invalid OrderId inputed");
-        }
+        
         var order = await _orderRepository.GetOrderByIdAsync(request.OrderId);
         if(order == null)
         {

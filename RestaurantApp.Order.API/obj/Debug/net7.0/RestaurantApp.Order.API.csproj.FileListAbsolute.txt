@@ -92,3 +92,5 @@ C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API\b
 C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
