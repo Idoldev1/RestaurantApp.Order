@@ -1,6 +1,5 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using RestaurantApp.Order.Domain.Entities;
 using RestaurantApp.Order.Service.Commands;
 using RestaurantApp.Order.Service.Queries;
 
@@ -32,6 +31,14 @@ public class OrderController : ControllerBase
     [HttpPost("placeOrder")]
     public async Task<IActionResult> PlaceOrder([FromBody] PlaceOrderCommand placeOrderCommand)
     {
+        if (placeOrderCommand is null)
+                return BadRequest("The Order details is empty. Please input valid details");
+
+
+        if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState);
+
+                
         var orderId = await _mediator.Send(placeOrderCommand) ?? throw new Exception("Invalid details. Please try again");
 
         // You can customize the response based on the result
