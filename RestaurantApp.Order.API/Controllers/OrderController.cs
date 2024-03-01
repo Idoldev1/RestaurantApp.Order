@@ -1,5 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using RestaurantApp.Order.API.ActionFilter;
+using RestaurantApp.Order.Domain.Dtos;
 using RestaurantApp.Order.Service.Commands;
 using RestaurantApp.Order.Service.Queries;
 
@@ -19,20 +21,21 @@ public class OrderController : ControllerBase
 
 
 
-    [HttpGet("{id:guid}")]
-    public async Task<IActionResult> GetOrderById(string orderId)
+    [HttpGet("{id:guid}", Name = "OrderById")]
+    public async Task<IActionResult> GetOrderById(string orderName)
     {
-            var query = new GetOrderByIdQuery{OrderId = orderId};
+            var query = new GetOrderByIdQuery{OrderId = orderName};
             var order = await _mediator.Send(query);
             return Ok(order);
     }
 
 
     [HttpPost("placeOrder")]
+    //[ServiceFilter(typeof(ValidationFilterAttribute))]
     public async Task<IActionResult> PlaceOrder([FromBody] PlaceOrderCommand placeOrderCommand)
     {
-        if (placeOrderCommand is null)
-                return BadRequest("The Order details is empty. Please input valid details");
+        /*if (placeOrderCommand == null)
+                return BadRequest("The Order details is empty. Please input valid details");*/
 
 
         if (!ModelState.IsValid)

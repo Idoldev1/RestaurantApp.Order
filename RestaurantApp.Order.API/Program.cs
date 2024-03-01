@@ -3,6 +3,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NLog;
+using RestaurantApp.Order.API.ActionFilter;
 using RestaurantApp.Order.API.Extension;
 using RestaurantApp.Order.Data.DataAccess;
 using RestaurantApp.Order.LoggerService.Extensions;
@@ -18,6 +19,7 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
 });
+builder.Services.AddScoped<ValidationFilterAttribute>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

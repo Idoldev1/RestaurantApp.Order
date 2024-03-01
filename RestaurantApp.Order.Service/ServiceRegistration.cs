@@ -21,7 +21,7 @@ public static class ServiceRegistration
         services.AddMediatR(typeof(IServiceCollection).Assembly);
         services.AddAutoMapper(typeof(IServiceCollection));
         services.AddScoped<IRequestHandler<PlaceOrderCommand, PlaceOrderDto>, PlaceOrderCommandHandler>();
-        services.AddScoped<IRequestHandler<GetOrderByIdQuery, Orders>, GetOrderByIdQueryHandler>();
+        services.AddScoped<IRequestHandler<GetOrderByIdQuery, GetOrderDto>, GetOrderByIdQueryHandler>();
 
         services.AddMassTransit(x =>
         {

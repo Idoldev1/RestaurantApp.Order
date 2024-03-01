@@ -26,7 +26,6 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, Place
     {
 
         //Create a new Order
-        //Manual mapping for the purpose of testing
         var order = new Orders
         {
             CustomerId = request.CustomerId,
@@ -40,14 +39,13 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, Place
             //Set other properties as required
         };
 
-        var orderId = await _orderRepository.PlaceOrderAsync(order);
+        _orderRepository.PlaceOrderAsync(order);
 
         // You might include additional logic, such as sending email and SMS notifications
 
         var newOrder = _mapper.Map<PlaceOrderDto>(order);
-
-
-        await _publish.Publish(orderId, cancellationToken);
+        
+        await _publish.Publish(newOrder);
 
         return newOrder;
 
