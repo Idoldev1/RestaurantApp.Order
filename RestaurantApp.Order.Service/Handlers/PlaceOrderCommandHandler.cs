@@ -9,7 +9,7 @@ using RestaurantApp.Order.Service.Repositories.Interfaces;
 namespace RestaurantApp.Order.Service.Handlers;
 
 
-public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, PlaceOrderDto>
+public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, GetOrderDto>
 {
     private readonly IOrderRepository _orderRepository;
     private readonly IBus _publish;
@@ -22,12 +22,12 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, Place
         _mapper = mapper;
     }
 
-    public async Task<PlaceOrderDto> Handle(PlaceOrderCommand request, CancellationToken cancellationToken)
+    public async Task<GetOrderDto> Handle(PlaceOrderCommand request, CancellationToken cancellationToken)
     {
 
         //Create a new Order
-        var order = new Orders
-        {
+        var order = new Orders();
+        /*{
             CustomerId = request.CustomerId,
             OrderItems = request.OrderItems.Select(item => new OrderItem
             {
@@ -37,13 +37,13 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, Place
             }).ToList(),
             OrderStatus = OrderStatus.Queued,
             //Set other properties as required
-        };
+        };*/
 
         _orderRepository.PlaceOrderAsync(order);
 
         // You might include additional logic, such as sending email and SMS notifications
 
-        var newOrder = _mapper.Map<PlaceOrderDto>(order);
+        var newOrder = _mapper.Map<GetOrderDto>(order);
         
         await _publish.Publish(newOrder);
 

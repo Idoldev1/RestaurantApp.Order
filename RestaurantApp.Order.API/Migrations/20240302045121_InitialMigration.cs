@@ -14,13 +14,13 @@ namespace RestaurantApp.Order.API.Migrations
                 name: "Orders",
                 columns: table => new
                 {
-                    OrderId = table.Column<string>(type: "TEXT", nullable: false),
+                    Orders = table.Column<string>(type: "TEXT", nullable: false),
                     CustomerId = table.Column<string>(type: "TEXT", nullable: false),
                     OrderStatus = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Orders", x => x.OrderId);
+                    table.PrimaryKey("PK_Orders", x => x.Orders);
                 });
 
             migrationBuilder.CreateTable(
@@ -39,7 +39,7 @@ namespace RestaurantApp.Order.API.Migrations
                         name: "FK_OrderItem_Orders_OrdersOrderId",
                         column: x => x.OrdersOrderId,
                         principalTable: "Orders",
-                        principalColumn: "OrderId");
+                        principalColumn: "Orders");
                 });
 
             migrationBuilder.CreateIndex(

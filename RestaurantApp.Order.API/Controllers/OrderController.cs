@@ -22,9 +22,9 @@ public class OrderController : ControllerBase
 
 
     [HttpGet("{id:guid}", Name = "OrderById")]
-    public async Task<IActionResult> GetOrderById(string orderName)
+    public async Task<IActionResult> GetOrderById(string orderId)
     {
-            var query = new GetOrderByIdQuery{OrderId = orderName};
+            var query = new GetOrderByIdQuery{OrderId = orderId};
             var order = await _mediator.Send(query);
             return Ok(order);
     }
@@ -32,7 +32,7 @@ public class OrderController : ControllerBase
 
     [HttpPost("placeOrder")]
     //[ServiceFilter(typeof(ValidationFilterAttribute))]
-    public async Task<IActionResult> PlaceOrder([FromBody] PlaceOrderCommand placeOrderCommand)
+    public async Task<IActionResult> PlaceOrder([FromBody] PlaceOrderDto placeOrderCommand)
     {
         /*if (placeOrderCommand == null)
                 return BadRequest("The Order details is empty. Please input valid details");*/

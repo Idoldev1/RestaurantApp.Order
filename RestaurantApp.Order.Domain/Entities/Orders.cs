@@ -7,9 +7,9 @@ namespace RestaurantApp.Order.Domain.Entities;
 public class Orders
 {
     [Key]
-    [Column("Order Id")]
+    [Column("Orders")]
     public string OrderId { get; set; } = Guid.NewGuid().ToString();
     public string CustomerId { get; set; }
-    public List<OrderItem> OrderItems { get; set; }
+    public ICollection<OrderItem> OrderItems { get; set; }
     public OrderStatus OrderStatus { get; set; }
 }

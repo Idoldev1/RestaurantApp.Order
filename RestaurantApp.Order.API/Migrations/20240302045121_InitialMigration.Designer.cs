@@ -10,8 +10,8 @@ using RestaurantApp.Order.Data.DataAccess;
 namespace RestaurantApp.Order.API.Migrations
 {
     [DbContext(typeof(OrderDb))]
-    [Migration("20240228150605_NewMigration")]
-    partial class NewMigration
+    [Migration("20240302045121_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,9 +21,9 @@ namespace RestaurantApp.Order.API.Migrations
 
             modelBuilder.Entity("RestaurantApp.Order.Domain.Entities.OrderItem", b =>
                 {
-                    b.Property<string>("FoodId")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("Food Id");
+                    b.Property<int>("FoodId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("FoodName")
                         .IsRequired()
@@ -43,7 +43,7 @@ namespace RestaurantApp.Order.API.Migrations
                 {
                     b.Property<string>("OrderId")
                         .HasColumnType("TEXT")
-                        .HasColumnName("Order Id");
+                        .HasColumnName("Orders");
 
                     b.Property<string>("CustomerId")
                         .IsRequired()

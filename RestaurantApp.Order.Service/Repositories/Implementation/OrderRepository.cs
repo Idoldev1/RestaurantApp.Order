@@ -15,10 +15,12 @@ public class OrderRepository : IOrderRepository
         _orderDb = orderDb;
     }
 
-    public async void PlaceOrderAsync(Orders order)
+    public async Task<Orders> PlaceOrderAsync(Orders order)
     {
         _orderDb.Orders.Add(order);
         await _orderDb.SaveChangesAsync();
+
+        return order;
 
     }
 
@@ -27,10 +29,10 @@ public class OrderRepository : IOrderRepository
         return await _orderDb.Orders.FirstOrDefaultAsync(o => o.OrderId == Id);
     }
 
-    public async void UpdateOrdersAsync(Orders order)
+    public void UpdateOrdersAsync(Orders order)
     {
         _orderDb.Entry(order).State = EntityState.Modified;
 
-        await _orderDb.SaveChangesAsync();
+        _orderDb.SaveChanges();
     }
 }

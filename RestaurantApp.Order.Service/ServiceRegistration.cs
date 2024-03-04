@@ -20,7 +20,7 @@ public static class ServiceRegistration
         services.AddTransient<IOrderRepository, OrderRepository>();
         services.AddMediatR(typeof(IServiceCollection).Assembly);
         services.AddAutoMapper(typeof(IServiceCollection));
-        services.AddScoped<IRequestHandler<PlaceOrderCommand, PlaceOrderDto>, PlaceOrderCommandHandler>();
+        services.AddScoped<IRequestHandler<PlaceOrderCommand, GetOrderDto>, PlaceOrderCommandHandler>();
         services.AddScoped<IRequestHandler<GetOrderByIdQuery, GetOrderDto>, GetOrderByIdQueryHandler>();
 
         services.AddMassTransit(x =>

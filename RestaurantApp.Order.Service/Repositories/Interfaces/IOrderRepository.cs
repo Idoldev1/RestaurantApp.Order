@@ -5,7 +5,7 @@ namespace RestaurantApp.Order.Service.Repositories.Interfaces;
 
 public interface IOrderRepository
 {
-    void PlaceOrderAsync (Orders order);
+    Task<Orders> PlaceOrderAsync (Orders order);
     Task<Orders> GetOrderByIdAsync(string Id);
     void UpdateOrdersAsync(Orders order);
 }

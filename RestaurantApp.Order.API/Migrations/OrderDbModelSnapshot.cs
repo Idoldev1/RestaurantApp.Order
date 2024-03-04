@@ -18,9 +18,9 @@ namespace RestaurantApp.Order.API.Migrations
 
             modelBuilder.Entity("RestaurantApp.Order.Domain.Entities.OrderItem", b =>
                 {
-                    b.Property<string>("FoodId")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("Food Id");
+                    b.Property<int>("FoodId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("FoodName")
                         .IsRequired()
@@ -40,7 +40,7 @@ namespace RestaurantApp.Order.API.Migrations
                 {
                     b.Property<string>("OrderId")
                         .HasColumnType("TEXT")
-                        .HasColumnName("Order Id");
+                        .HasColumnName("Orders");
 
                     b.Property<string>("CustomerId")
                         .IsRequired()

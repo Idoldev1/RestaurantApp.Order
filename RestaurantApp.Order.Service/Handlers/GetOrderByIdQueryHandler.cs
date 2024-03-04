@@ -1,7 +1,6 @@
 using AutoMapper;
 using MediatR;
 using RestaurantApp.Order.Domain.Dtos;
-using RestaurantApp.Order.Domain.Entities;
 using RestaurantApp.Order.Domain.Exceptions;
 using RestaurantApp.Order.LoggerService.Interfaces;
 using RestaurantApp.Order.Service.Repositories.Interfaces;

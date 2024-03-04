@@ -7,7 +7,11 @@ namespace RestaurantApp.Order.Domain.Entities;
 public class OrderItem
 {
     [Key]
-    [Column("Food Id")]
-    public string FoodId { get; set; }
+    //[Column("Foods")]
+    public int FoodId { get; set; }
     public string FoodName { get; set; }
+
+    /*[ForeignKey(nameof(Orders))]
+    public string OrdersFoodId { get; set;}
+    public Orders? Orders { get; set;}*/
 }
