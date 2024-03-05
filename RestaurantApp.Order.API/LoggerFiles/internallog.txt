@@ -2264,3 +2264,453 @@
 2024-03-02 13:57:25.6823 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
 2024-03-02 13:57:25.7094 Trace FileTarget(Name=logfile) has 2 layouts
 2024-03-02 13:57:25.7094 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-03-04 17:22:38.6141 Info Message Template Auto Format enabled
+2024-03-04 17:22:38.7543 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2024-03-04 17:22:38.9921 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2024-03-04 17:22:38.9921 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:22:39.0012 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:22:39.0034 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-04 17:22:39.0034 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:22:39.0034 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:22:39.0034 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-04 17:22:39.0034 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:22:39.0034 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-04 17:22:39.0034 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:22:39.0034 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-04 17:22:39.0034 Info Adding target FileTarget(Name=logfile)
+2024-03-04 17:22:39.0034 Debug Registered target logfile: NLog.Targets.FileTarget
+2024-03-04 17:22:39.0034 Trace ParseRulesElement
+2024-03-04 17:22:39.0220 Debug Watching file-filter 'nlog.config' in directory: C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API
+2024-03-04 17:22:39.0220 Debug --- NLog configuration dump ---
+2024-03-04 17:22:39.0220 Debug Targets:
+2024-03-04 17:22:39.0220 Debug FileTarget(Name=logfile)
+2024-03-04 17:22:39.0220 Debug Rules:
+2024-03-04 17:22:39.0220 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2024-03-04 17:22:39.0220 Debug --- End of NLog configuration dump ---
+2024-03-04 17:22:39.0220 Trace FindReachableObject<System.Object>:
+2024-03-04 17:22:39.0220 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2024-03-04 17:22:39.0220 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2024-03-04 17:22:39.0220 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-03-04 17:22:39.0220 Trace   Scanning Property FileName 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt' NLog.Layouts
+2024-03-04 17:22:39.0220 Trace   Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:22:39.0220 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:22:39.0220 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:22:39.0220 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-04 17:22:39.0220 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:22:39.0220 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2024-03-04 17:22:39.0220 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2024-03-04 17:22:39.0220 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:22:39.0220 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:22:39.0220 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-04 17:22:39.0220 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:22:39.0220 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-04 17:22:39.0476 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:22:39.0476 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-04 17:22:39.0476 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2024-03-04 17:22:39.0476 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2024-03-04 17:22:39.0476 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API\nlog.config
+2024-03-04 17:22:39.0476 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2024-03-04 17:22:39.0476 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2024-03-04 17:22:39.0476 Trace Initializing Layout Renderer: ${message}
+2024-03-04 17:22:39.0476 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:22:39.0476 Trace Initializing Layout Renderer: ${level}
+2024-03-04 17:22:39.0476 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:22:39.0476 Trace Initializing Layout Renderer: ${longdate}
+2024-03-04 17:22:39.0476 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-03-04 17:22:39.0639 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:22:39.0639 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:22:39.0639 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:22:39.0639 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-04 17:22:39.0639 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:22:39.0639 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-04 17:22:39.0639 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:22:39.0639 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-04 17:22:39.0639 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:22:39.0639 Trace Initializing Layout Renderer: ${shortdate}
+2024-03-04 17:22:39.0639 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:22:39.0639 Trace Initializing C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt
+2024-03-04 17:22:39.0639 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:22:39.0639 Trace Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:22:39.0639 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:22:39.0639 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:22:39.0639 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-04 17:22:39.0639 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:22:39.0639 Trace Initializing FileTarget(Name=logfile)
+2024-03-04 17:22:39.0639 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-03-04 17:22:39.0639 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-03-04 17:22:39.0785 Trace  Scanning Property FileName 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt' NLog.Layouts
+2024-03-04 17:22:39.0785 Trace  Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:22:39.0785 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2024-03-04 17:22:39.0785 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2024-03-04 17:22:39.0785 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:22:39.0785 Trace FileTarget(Name=logfile) has 2 layouts
+2024-03-04 17:22:39.0785 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-03-04 17:25:05.7604 Debug Targets configured when LogLevel >= Debug for Logger: RestaurantApp.Order.LoggerService.Implementations.LoggerManager
+2024-03-04 17:25:05.7604 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Debug] => logfile
+2024-03-04 17:25:05.7604 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Info] => logfile
+2024-03-04 17:25:05.7604 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Warn] => logfile
+2024-03-04 17:25:05.7604 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Error] => logfile
+2024-03-04 17:25:05.7604 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Fatal] => logfile
+2024-03-04 17:25:05.7787 Debug FileTarget(Name=logfile): Preparing for new file 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-04_logfile.txt'
+2024-03-04 17:25:05.7787 Debug FileTarget(Name=logfile): Creating file appender: C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-04_logfile.txt
+2024-03-04 17:25:05.7787 Trace FileTarget(Name=logfile): Opening C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-04_logfile.txt with allowFileSharedWriting=False
+2024-03-04 17:27:14.2185 Info Message Template Auto Format enabled
+2024-03-04 17:27:14.2637 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2024-03-04 17:27:14.3406 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2024-03-04 17:27:14.3500 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:27:14.3500 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:27:14.3500 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-04 17:27:14.3634 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:27:14.3634 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:27:14.3634 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-04 17:27:14.3634 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:27:14.3634 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-04 17:27:14.3634 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:27:14.3634 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-04 17:27:14.3634 Info Adding target FileTarget(Name=logfile)
+2024-03-04 17:27:14.3634 Debug Registered target logfile: NLog.Targets.FileTarget
+2024-03-04 17:27:14.3634 Trace ParseRulesElement
+2024-03-04 17:27:14.3814 Debug Watching file-filter 'nlog.config' in directory: C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API
+2024-03-04 17:27:14.3814 Debug --- NLog configuration dump ---
+2024-03-04 17:27:14.3814 Debug Targets:
+2024-03-04 17:27:14.3814 Debug FileTarget(Name=logfile)
+2024-03-04 17:27:14.3814 Debug Rules:
+2024-03-04 17:27:14.3814 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2024-03-04 17:27:14.3814 Debug --- End of NLog configuration dump ---
+2024-03-04 17:27:14.3814 Trace FindReachableObject<System.Object>:
+2024-03-04 17:27:14.3814 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2024-03-04 17:27:14.3814 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2024-03-04 17:27:14.3997 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-03-04 17:27:14.3997 Trace   Scanning Property FileName 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt' NLog.Layouts
+2024-03-04 17:27:14.3997 Trace   Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:27:14.3997 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:27:14.3997 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:27:14.3997 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-04 17:27:14.3997 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:27:14.3997 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2024-03-04 17:27:14.3997 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2024-03-04 17:27:14.3997 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:27:14.3997 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:27:14.3997 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-04 17:27:14.4099 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:27:14.4099 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-04 17:27:14.4099 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:27:14.4099 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-04 17:27:14.4099 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2024-03-04 17:27:14.4099 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2024-03-04 17:27:14.4099 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API\nlog.config
+2024-03-04 17:27:14.4099 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2024-03-04 17:27:14.4099 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2024-03-04 17:27:14.4099 Trace Initializing Layout Renderer: ${message}
+2024-03-04 17:27:14.4251 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:27:14.4251 Trace Initializing Layout Renderer: ${level}
+2024-03-04 17:27:14.4251 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:27:14.4251 Trace Initializing Layout Renderer: ${longdate}
+2024-03-04 17:27:14.4251 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-03-04 17:27:14.4251 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:27:14.4251 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:27:14.4251 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:27:14.4251 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-04 17:27:14.4251 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:27:14.4251 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-04 17:27:14.4251 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:27:14.4251 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-04 17:27:14.4251 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:27:14.4251 Trace Initializing Layout Renderer: ${shortdate}
+2024-03-04 17:27:14.4251 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:27:14.4251 Trace Initializing C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt
+2024-03-04 17:27:14.4251 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:27:14.4251 Trace Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:27:14.4251 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:27:14.4251 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:27:14.4251 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-04 17:27:14.4251 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:27:14.4251 Trace Initializing FileTarget(Name=logfile)
+2024-03-04 17:27:14.4251 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-03-04 17:27:14.4251 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-03-04 17:27:14.4251 Trace  Scanning Property FileName 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt' NLog.Layouts
+2024-03-04 17:27:14.4251 Trace  Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:27:14.4251 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2024-03-04 17:27:14.4251 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2024-03-04 17:27:14.4251 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:27:14.4251 Trace FileTarget(Name=logfile) has 2 layouts
+2024-03-04 17:27:14.4510 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-03-04 17:28:04.4948 Debug Targets configured when LogLevel >= Debug for Logger: RestaurantApp.Order.LoggerService.Implementations.LoggerManager
+2024-03-04 17:28:04.4948 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Debug] => logfile
+2024-03-04 17:28:04.4948 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Info] => logfile
+2024-03-04 17:28:04.4948 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Warn] => logfile
+2024-03-04 17:28:04.4948 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Error] => logfile
+2024-03-04 17:28:04.4948 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Fatal] => logfile
+2024-03-04 17:28:04.5175 Debug FileTarget(Name=logfile): Preparing for new file 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-04_logfile.txt'
+2024-03-04 17:28:04.5243 Debug FileTarget(Name=logfile): Creating file appender: C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-04_logfile.txt
+2024-03-04 17:28:04.5243 Trace FileTarget(Name=logfile): Opening C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-04_logfile.txt with allowFileSharedWriting=False
+2024-03-04 17:32:35.2346 Info Message Template Auto Format enabled
+2024-03-04 17:32:35.3344 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2024-03-04 17:32:35.3981 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2024-03-04 17:32:35.3981 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:32:35.4071 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:32:35.4109 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-04 17:32:35.4109 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:32:35.4109 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:32:35.4109 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-04 17:32:35.4109 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:32:35.4109 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-04 17:32:35.4109 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:32:35.4109 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-04 17:32:35.4109 Info Adding target FileTarget(Name=logfile)
+2024-03-04 17:32:35.4269 Debug Registered target logfile: NLog.Targets.FileTarget
+2024-03-04 17:32:35.4269 Trace ParseRulesElement
+2024-03-04 17:32:35.4269 Debug Watching file-filter 'nlog.config' in directory: C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API
+2024-03-04 17:32:35.4269 Debug --- NLog configuration dump ---
+2024-03-04 17:32:35.4269 Debug Targets:
+2024-03-04 17:32:35.4428 Debug FileTarget(Name=logfile)
+2024-03-04 17:32:35.4428 Debug Rules:
+2024-03-04 17:32:35.4428 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2024-03-04 17:32:35.4428 Debug --- End of NLog configuration dump ---
+2024-03-04 17:32:35.4428 Trace FindReachableObject<System.Object>:
+2024-03-04 17:32:35.4428 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2024-03-04 17:32:35.4428 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2024-03-04 17:32:35.4428 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-03-04 17:32:35.4428 Trace   Scanning Property FileName 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt' NLog.Layouts
+2024-03-04 17:32:35.4428 Trace   Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:32:35.4428 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:32:35.4428 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:32:35.4571 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-04 17:32:35.4571 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:32:35.4571 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2024-03-04 17:32:35.4571 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2024-03-04 17:32:35.4571 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:32:35.4571 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:32:35.4571 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-04 17:32:35.4571 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:32:35.4571 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-04 17:32:35.4571 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:32:35.4571 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-04 17:32:35.4571 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2024-03-04 17:32:35.4571 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2024-03-04 17:32:35.4571 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API\nlog.config
+2024-03-04 17:32:35.4571 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2024-03-04 17:32:35.4786 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2024-03-04 17:32:35.4786 Trace Initializing Layout Renderer: ${message}
+2024-03-04 17:32:35.4786 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:32:35.4786 Trace Initializing Layout Renderer: ${level}
+2024-03-04 17:32:35.4786 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:32:35.4786 Trace Initializing Layout Renderer: ${longdate}
+2024-03-04 17:32:35.4786 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-03-04 17:32:35.4786 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:32:35.4786 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:32:35.4786 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:32:35.4786 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-04 17:32:35.4786 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:32:35.4786 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-04 17:32:35.4786 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:32:35.4896 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-04 17:32:35.4896 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:32:35.4896 Trace Initializing Layout Renderer: ${shortdate}
+2024-03-04 17:32:35.4896 Trace Initializing Layout Renderer: ${literal}
+2024-03-04 17:32:35.4896 Trace Initializing C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt
+2024-03-04 17:32:35.4896 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-04 17:32:35.4896 Trace Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:32:35.4896 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-04 17:32:35.4896 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:32:35.4896 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-04 17:32:35.5056 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-04 17:32:35.5056 Trace Initializing FileTarget(Name=logfile)
+2024-03-04 17:32:35.5056 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-03-04 17:32:35.5056 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-03-04 17:32:35.5056 Trace  Scanning Property FileName 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt' NLog.Layouts
+2024-03-04 17:32:35.5056 Trace  Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-04 17:32:35.5056 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2024-03-04 17:32:35.5056 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2024-03-04 17:32:35.5056 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-04 17:32:35.5056 Trace FileTarget(Name=logfile) has 2 layouts
+2024-03-04 17:32:35.5056 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-03-04 17:33:02.0966 Debug Targets configured when LogLevel >= Debug for Logger: RestaurantApp.Order.LoggerService.Implementations.LoggerManager
+2024-03-04 17:33:02.0977 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Debug] => logfile
+2024-03-04 17:33:02.0977 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Info] => logfile
+2024-03-04 17:33:02.0977 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Warn] => logfile
+2024-03-04 17:33:02.0977 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Error] => logfile
+2024-03-04 17:33:02.0977 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Fatal] => logfile
+2024-03-04 17:33:02.1209 Debug FileTarget(Name=logfile): Preparing for new file 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-04_logfile.txt'
+2024-03-04 17:33:02.1209 Debug FileTarget(Name=logfile): Creating file appender: C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-04_logfile.txt
+2024-03-04 17:33:02.1209 Trace FileTarget(Name=logfile): Opening C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-04_logfile.txt with allowFileSharedWriting=False
+2024-03-05 13:30:27.0632 Info Message Template Auto Format enabled
+2024-03-05 13:30:27.2207 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2024-03-05 13:30:27.5048 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2024-03-05 13:30:27.5084 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-05 13:30:27.5084 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:30:27.5084 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-05 13:30:27.5084 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2024-03-05 13:30:27.5084 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:30:27.5084 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-05 13:30:27.5231 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:30:27.5231 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-05 13:30:27.5231 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:30:27.5231 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-05 13:30:27.5231 Info Adding target FileTarget(Name=logfile)
+2024-03-05 13:30:27.5231 Debug Registered target logfile: NLog.Targets.FileTarget
+2024-03-05 13:30:27.5231 Trace ParseRulesElement
+2024-03-05 13:30:27.5460 Debug Watching file-filter 'nlog.config' in directory: C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API
+2024-03-05 13:30:27.5460 Debug --- NLog configuration dump ---
+2024-03-05 13:30:27.5460 Debug Targets:
+2024-03-05 13:30:27.5460 Debug FileTarget(Name=logfile)
+2024-03-05 13:30:27.5460 Debug Rules:
+2024-03-05 13:30:27.5577 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2024-03-05 13:30:27.5577 Debug --- End of NLog configuration dump ---
+2024-03-05 13:30:27.5577 Trace FindReachableObject<System.Object>:
+2024-03-05 13:30:27.5577 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2024-03-05 13:30:27.5577 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2024-03-05 13:30:27.5577 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-03-05 13:30:27.5577 Trace   Scanning Property FileName 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt' NLog.Layouts
+2024-03-05 13:30:27.5577 Trace   Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-05 13:30:27.5577 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-05 13:30:27.5696 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:30:27.5696 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-05 13:30:27.5696 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:30:27.5696 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2024-03-05 13:30:27.5696 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2024-03-05 13:30:27.5696 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-05 13:30:27.5696 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-05 13:30:27.5696 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-05 13:30:27.5696 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:30:27.5696 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-05 13:30:27.5696 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:30:27.5696 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-05 13:30:27.5696 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2024-03-05 13:30:27.5696 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2024-03-05 13:30:27.5696 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API\nlog.config
+2024-03-05 13:30:27.5696 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2024-03-05 13:30:27.5888 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2024-03-05 13:30:27.5888 Trace Initializing Layout Renderer: ${message}
+2024-03-05 13:30:27.5888 Trace Initializing Layout Renderer: ${literal}
+2024-03-05 13:30:27.5888 Trace Initializing Layout Renderer: ${level}
+2024-03-05 13:30:27.5888 Trace Initializing Layout Renderer: ${literal}
+2024-03-05 13:30:27.5888 Trace Initializing Layout Renderer: ${longdate}
+2024-03-05 13:30:27.5888 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-03-05 13:30:27.5888 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:30:27.5888 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-05 13:30:27.5888 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-05 13:30:27.5888 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-05 13:30:27.5888 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:30:27.5888 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-05 13:30:27.5888 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:30:27.6004 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-05 13:30:27.6004 Trace Initializing Layout Renderer: ${literal}
+2024-03-05 13:30:27.6004 Trace Initializing Layout Renderer: ${shortdate}
+2024-03-05 13:30:27.6004 Trace Initializing Layout Renderer: ${literal}
+2024-03-05 13:30:27.6004 Trace Initializing C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt
+2024-03-05 13:30:27.6004 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:30:27.6004 Trace Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-05 13:30:27.6004 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-05 13:30:27.6004 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:30:27.6004 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-05 13:30:27.6004 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:30:27.6004 Trace Initializing FileTarget(Name=logfile)
+2024-03-05 13:30:27.6004 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-03-05 13:30:27.6004 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-03-05 13:30:27.6004 Trace  Scanning Property FileName 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt' NLog.Layouts
+2024-03-05 13:30:27.6004 Trace  Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-05 13:30:27.6004 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2024-03-05 13:30:27.6004 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2024-03-05 13:30:27.6004 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-05 13:30:27.6004 Trace FileTarget(Name=logfile) has 2 layouts
+2024-03-05 13:30:27.6239 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-03-05 13:31:39.1345 Debug Targets configured when LogLevel >= Debug for Logger: RestaurantApp.Order.LoggerService.Implementations.LoggerManager
+2024-03-05 13:31:39.1360 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Debug] => logfile
+2024-03-05 13:31:39.1360 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Info] => logfile
+2024-03-05 13:31:39.1360 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Warn] => logfile
+2024-03-05 13:31:39.1360 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Error] => logfile
+2024-03-05 13:31:39.1360 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Fatal] => logfile
+2024-03-05 13:31:39.1521 Debug FileTarget(Name=logfile): Preparing for new file 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-05_logfile.txt'
+2024-03-05 13:31:39.1521 Debug FileTarget(Name=logfile): Creating file appender: C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-05_logfile.txt
+2024-03-05 13:31:39.1521 Trace FileTarget(Name=logfile): Opening C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-05_logfile.txt with allowFileSharedWriting=False
+2024-03-05 13:44:07.2252 Info Message Template Auto Format enabled
+2024-03-05 13:44:07.3042 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2024-03-05 13:44:07.3686 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2024-03-05 13:44:07.3686 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-05 13:44:07.3686 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:44:07.3686 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-05 13:44:07.3686 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2024-03-05 13:44:07.3826 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:44:07.3826 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-05 13:44:07.3826 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:44:07.3826 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-05 13:44:07.3826 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:44:07.3826 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-05 13:44:07.3826 Info Adding target FileTarget(Name=logfile)
+2024-03-05 13:44:07.3826 Debug Registered target logfile: NLog.Targets.FileTarget
+2024-03-05 13:44:07.3826 Trace ParseRulesElement
+2024-03-05 13:44:07.4048 Debug Watching file-filter 'nlog.config' in directory: C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API
+2024-03-05 13:44:07.4048 Debug --- NLog configuration dump ---
+2024-03-05 13:44:07.4048 Debug Targets:
+2024-03-05 13:44:07.4048 Debug FileTarget(Name=logfile)
+2024-03-05 13:44:07.4048 Debug Rules:
+2024-03-05 13:44:07.4164 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2024-03-05 13:44:07.4164 Debug --- End of NLog configuration dump ---
+2024-03-05 13:44:07.4164 Trace FindReachableObject<System.Object>:
+2024-03-05 13:44:07.4164 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2024-03-05 13:44:07.4164 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2024-03-05 13:44:07.4164 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-03-05 13:44:07.4164 Trace   Scanning Property FileName 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt' NLog.Layouts
+2024-03-05 13:44:07.4164 Trace   Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-05 13:44:07.4164 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-05 13:44:07.4164 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:44:07.4164 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-05 13:44:07.4164 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:44:07.4331 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2024-03-05 13:44:07.4331 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2024-03-05 13:44:07.4331 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-05 13:44:07.4331 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-05 13:44:07.4331 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-05 13:44:07.4331 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:44:07.4331 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-05 13:44:07.4331 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:44:07.4331 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-05 13:44:07.4331 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2024-03-05 13:44:07.4331 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2024-03-05 13:44:07.4453 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\tosin\Desktop\Yinka Files\RestaurantApp.Order\RestaurantApp.Order.API\nlog.config
+2024-03-05 13:44:07.4453 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2024-03-05 13:44:07.4453 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2024-03-05 13:44:07.4453 Trace Initializing Layout Renderer: ${message}
+2024-03-05 13:44:07.4453 Trace Initializing Layout Renderer: ${literal}
+2024-03-05 13:44:07.4453 Trace Initializing Layout Renderer: ${level}
+2024-03-05 13:44:07.4453 Trace Initializing Layout Renderer: ${literal}
+2024-03-05 13:44:07.4453 Trace Initializing Layout Renderer: ${longdate}
+2024-03-05 13:44:07.4453 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-03-05 13:44:07.4453 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:44:07.4453 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-05 13:44:07.4453 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-05 13:44:07.4453 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-03-05 13:44:07.4453 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:44:07.4657 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-03-05 13:44:07.4657 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:44:07.4657 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-03-05 13:44:07.4657 Trace Initializing Layout Renderer: ${literal}
+2024-03-05 13:44:07.4657 Trace Initializing Layout Renderer: ${shortdate}
+2024-03-05 13:44:07.4657 Trace Initializing Layout Renderer: ${literal}
+2024-03-05 13:44:07.4657 Trace Initializing C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt
+2024-03-05 13:44:07.4657 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-03-05 13:44:07.4657 Trace Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-05 13:44:07.4657 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2024-03-05 13:44:07.4657 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:44:07.4657 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-03-05 13:44:07.4657 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-03-05 13:44:07.4657 Trace Initializing FileTarget(Name=logfile)
+2024-03-05 13:44:07.4828 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-03-05 13:44:07.4828 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-03-05 13:44:07.4828 Trace  Scanning Property FileName 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt' NLog.Layouts
+2024-03-05 13:44:07.4828 Trace  Scanning SimpleLayout 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/${shortdate}_logfile.txt'
+2024-03-05 13:44:07.4828 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2024-03-05 13:44:07.4828 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2024-03-05 13:44:07.4828 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-03-05 13:44:07.4828 Trace FileTarget(Name=logfile) has 2 layouts
+2024-03-05 13:44:07.4923 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-03-05 13:44:20.2536 Debug Targets configured when LogLevel >= Debug for Logger: RestaurantApp.Order.LoggerService.Implementations.LoggerManager
+2024-03-05 13:44:20.2536 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Debug] => logfile
+2024-03-05 13:44:20.2536 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Info] => logfile
+2024-03-05 13:44:20.2536 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Warn] => logfile
+2024-03-05 13:44:20.2536 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Error] => logfile
+2024-03-05 13:44:20.2536 Debug Logger RestaurantApp.Order.LoggerService.Implementations.LoggerManager [Fatal] => logfile
+2024-03-05 13:44:20.2757 Debug FileTarget(Name=logfile): Preparing for new file 'C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-05_logfile.txt'
+2024-03-05 13:44:20.2827 Debug FileTarget(Name=logfile): Creating file appender: C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-05_logfile.txt
+2024-03-05 13:44:20.2827 Trace FileTarget(Name=logfile): Opening C:/Users/tosin/Desktop/Yinka Files/RestaurantApp.Order/RestaurantApp.Order.API/LoggerFiles/logs/2024-03-05_logfile.txt with allowFileSharedWriting=False

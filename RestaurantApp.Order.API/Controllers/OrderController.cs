@@ -1,7 +1,5 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using RestaurantApp.Order.API.ActionFilter;
-using RestaurantApp.Order.Domain.Dtos;
 using RestaurantApp.Order.Service.Commands;
 using RestaurantApp.Order.Service.Queries;
 
@@ -32,7 +30,7 @@ public class OrderController : ControllerBase
 
     [HttpPost("placeOrder")]
     //[ServiceFilter(typeof(ValidationFilterAttribute))]
-    public async Task<IActionResult> PlaceOrder([FromBody] PlaceOrderDto placeOrderCommand)
+    public async Task<IActionResult> PlaceOrder([FromBody] PlaceOrderCommand placeOrderCommand)
     {
         /*if (placeOrderCommand == null)
                 return BadRequest("The Order details is empty. Please input valid details");*/
