@@ -19,7 +19,7 @@ public class OrderController : ControllerBase
 
 
 
-    [HttpGet("{id:guid}", Name = "OrderById")]
+    [HttpGet(Name = "OrderById")]
     public async Task<IActionResult> GetOrderById(string orderId)
     {
             var query = new GetOrderByIdQuery{OrderId = orderId};

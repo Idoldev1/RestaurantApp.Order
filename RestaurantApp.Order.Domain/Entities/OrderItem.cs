@@ -10,6 +10,7 @@ public class OrderItem
     //[Column("Foods")]
     public int FoodId { get; set; }
     public string FoodName { get; set; }
+    public int Quantity { get; set; }
 
     /*[ForeignKey(nameof(Orders))]
     public string OrdersFoodId { get; set;}

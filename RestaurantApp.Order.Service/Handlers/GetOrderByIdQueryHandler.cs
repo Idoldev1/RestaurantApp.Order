@@ -1,6 +1,7 @@
 using AutoMapper;
 using MediatR;
 using RestaurantApp.Order.Domain.Dtos;
+using RestaurantApp.Order.Domain.Entities;
 using RestaurantApp.Order.Domain.Exceptions;
 using RestaurantApp.Order.LoggerService.Interfaces;
 using RestaurantApp.Order.Service.Repositories.Interfaces;
@@ -8,7 +9,7 @@ using RestaurantApp.Order.Service.Repositories.Interfaces;
 namespace RestaurantApp.Order.Service.Queries;
 
 
-public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, GetOrderDto>
+public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, Orders>
 {
     private IOrderRepository _orderRepository;
     private ILoggerManager _logger;
@@ -21,7 +22,7 @@ public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, GetOr
         _mapper = mapper;
     }
 
-    public async Task<GetOrderDto> Handle(GetOrderByIdQuery request, CancellationToken cancellationToken)
+    public async Task<Orders> Handle(GetOrderByIdQuery request, CancellationToken cancellationToken)
     {
         
         var order = await _orderRepository.GetOrderByIdAsync(request.OrderId);
@@ -31,9 +32,9 @@ public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, GetOr
             throw new OrderNotFoundException(request.OrderId);
         }
 
-        var orders = _mapper.Map<GetOrderDto>(order);
+        //var orders = _mapper.Map<GetOrderDto>(order);
 
-        return orders;
+        return order;
 
 
     }

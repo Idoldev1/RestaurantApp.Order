@@ -10,7 +10,7 @@ using RestaurantApp.Order.Data.DataAccess;
 namespace RestaurantApp.Order.API.Migrations
 {
     [DbContext(typeof(OrderDb))]
-    [Migration("20240302045121_InitialMigration")]
+    [Migration("20240308145453_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -31,6 +31,9 @@ namespace RestaurantApp.Order.API.Migrations
 
                     b.Property<string>("OrdersOrderId")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("FoodId");
 

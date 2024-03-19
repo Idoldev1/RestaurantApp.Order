@@ -29,6 +29,9 @@ namespace RestaurantApp.Order.API.Migrations
                     b.Property<string>("OrdersOrderId")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("FoodId");
 
                     b.HasIndex("OrdersOrderId");

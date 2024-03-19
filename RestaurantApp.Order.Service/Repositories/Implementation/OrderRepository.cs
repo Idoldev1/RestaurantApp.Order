@@ -15,18 +15,16 @@ public class OrderRepository : IOrderRepository
         _orderDb = orderDb;
     }
 
-    public async Task<Orders> PlaceOrderAsync(Orders order)
+    public void PlaceOrderAsync(Orders order)
     {
         _orderDb.Orders.Add(order);
-        await _orderDb.SaveChangesAsync();
-
-        return order;
+        _orderDb.SaveChangesAsync();
 
     }
 
-    public async Task<Orders> GetOrderByIdAsync(string Id)
+    public async Task<Orders> GetOrderByIdAsync(string id)
     {
-        return await _orderDb.Orders.FirstOrDefaultAsync(o => o.OrderId == Id);
+        return await _orderDb.Orders.Include(o => o.OrderItems).SingleOrDefaultAsync(o => o.OrderId == id);
     }
 
     public void UpdateOrdersAsync(Orders order)

@@ -7,5 +7,5 @@ namespace RestaurantApp.Order.Service.Commands;
 public class PlaceOrderCommand : IRequest<GetOrderDto>
 {
     public string CustomerId { get; set; }
-    public ICollection<OrderItem> OrderItems { get; set; }
+    public List<OrderItemDto> OrderItems { get; set; }
 }

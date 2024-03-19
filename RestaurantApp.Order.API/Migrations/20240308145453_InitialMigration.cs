@@ -30,6 +30,7 @@ namespace RestaurantApp.Order.API.Migrations
                     FoodId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     FoodName = table.Column<string>(type: "TEXT", nullable: false),
+                    Quantity = table.Column<int>(type: "INTEGER", nullable: false),
                     OrdersOrderId = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>

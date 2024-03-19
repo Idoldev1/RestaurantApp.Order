@@ -6,6 +6,7 @@ using RestaurantApp.Order.Domain.Dtos;
 using RestaurantApp.Order.Domain.Entities;
 using RestaurantApp.Order.Service.Commands;
 using RestaurantApp.Order.Service.Handlers;
+using RestaurantApp.Order.Service.Mapper;
 using RestaurantApp.Order.Service.Queries;
 using RestaurantApp.Order.Service.Repositories.Implementation;
 using RestaurantApp.Order.Service.Repositories.Interfaces;
@@ -19,9 +20,9 @@ public static class ServiceRegistration
     {
         services.AddTransient<IOrderRepository, OrderRepository>();
         services.AddMediatR(typeof(IServiceCollection).Assembly);
-        services.AddAutoMapper(typeof(IServiceCollection));
+        services.AddAutoMapper(typeof(MappingProfile).Assembly);
         services.AddScoped<IRequestHandler<PlaceOrderCommand, GetOrderDto>, PlaceOrderCommandHandler>();
-        services.AddScoped<IRequestHandler<GetOrderByIdQuery, GetOrderDto>, GetOrderByIdQueryHandler>();
+        services.AddScoped<IRequestHandler<GetOrderByIdQuery, Orders>, GetOrderByIdQueryHandler>();
 
         services.AddMassTransit(x =>
         {
