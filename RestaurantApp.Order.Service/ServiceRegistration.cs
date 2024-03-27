@@ -30,8 +30,8 @@ public static class ServiceRegistration
             {
                 cfg.Host("localhost", "/", h =>
                 {
-                    h.Username("guest");
-                    h.Password("guest");
+                    h.Username("myuser");
+                    h.Password("mypass");
                 });
             });
         });

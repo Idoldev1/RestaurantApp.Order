@@ -30,7 +30,7 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, GetOr
 
         try
         {
-            //Create a new Order
+            // First you create a new Order
             var order = new Orders
             {
                 CustomerId = request.CustomerId,
@@ -45,7 +45,9 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, GetOr
                 }).ToList()
             };
 
-            // Save the order
+            //if ()
+
+            // Save the order through the repository
             _orderRepository.PlaceOrderAsync(order);
 
             // You might include additional logic, such as sending email and SMS notifications
@@ -63,11 +65,10 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, GetOr
                     // Set other properties as required
                 }).ToList(),
                 OrderStatus = order.OrderStatus
-                // Map other properties as required
             };
 
-            // Publish the order (if needed)
-            // await _publish.Publish(newOrder);
+            // Publish the order
+            await _publish.Publish(newOrder);
 
             return newOrder;
         }
