@@ -33,15 +33,11 @@ public class OrderController : ControllerBase
     [ServiceFilter(typeof(ValidationFilterAttribute))]
     public async Task<IActionResult> PlaceOrder([FromBody] PlaceOrderCommand placeOrderCommand)
     {
-        /*if (placeOrderCommand == null)
-                return BadRequest("The Order details is empty. Please input valid details");
-
-
-        if (!ModelState.IsValid)
+        /*if (!ModelState.IsValid)
                 return UnprocessableEntity(ModelState);*/
 
                 
-        var orderId = await _mediator.Send(placeOrderCommand) ?? throw new Exception("Invalid details. Please try again");
+        var orderId = await _mediator.Send(placeOrderCommand); //?? throw new Exception("Invalid details. Please try again");
 
         // You can customize the response based on the result
         return Ok(orderId);
