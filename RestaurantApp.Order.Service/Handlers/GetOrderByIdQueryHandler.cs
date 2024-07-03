@@ -9,18 +9,11 @@ using RestaurantApp.Order.Service.Repositories.Interfaces;
 namespace RestaurantApp.Order.Service.Queries;
 
 
-public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, Orders>
+public class GetOrderByIdQueryHandler(IOrderRepository orderRepository, ILoggerManager logger, IMapper mapper) : IRequestHandler<GetOrderByIdQuery, Orders>
 {
-    private IOrderRepository _orderRepository;
-    private ILoggerManager _logger;
-    private readonly IMapper _mapper;
-
-    public GetOrderByIdQueryHandler(IOrderRepository orderRepository, ILoggerManager logger, IMapper mapper)
-    {
-        _orderRepository = orderRepository;
-        _logger = logger;
-        _mapper = mapper;
-    }
+    private IOrderRepository _orderRepository = orderRepository;
+    private ILoggerManager _logger = logger;
+    private readonly IMapper _mapper = mapper;
 
     public async Task<Orders> Handle(GetOrderByIdQuery request, CancellationToken cancellationToken)
     {
