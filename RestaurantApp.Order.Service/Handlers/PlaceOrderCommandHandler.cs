@@ -67,7 +67,7 @@ public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, GetOr
                 OrderStatus = order.OrderStatus
             };
 
-            // Publish the order
+            //Publish the order to rabbitmq
             await _publish.Publish(newOrder);
 
             return newOrder;
